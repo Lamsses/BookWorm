@@ -12,6 +12,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".WelcomPage"
+            android:exported="false" />
+        <activity
+            android:name=".ForYouAll"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
