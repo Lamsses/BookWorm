@@ -86,7 +86,7 @@
           android:id="@+id/seeall_foryou_text"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="See all"
+          android:text="See All"
           android:textColor="@color/purple_200"
           android:textSize="14sp"
           android:gravity="right"
