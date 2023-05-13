@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@id/textView2"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:text="Delve into your most cherished  literary works. "
@@ -55,7 +55,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="350dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:text="Get started"
