@@ -4,95 +4,80 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/tag_selected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="42dp"
-        android:text="Selected Tags"
-        android:textColor="@color/black"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/tag"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="452dp"
         android:text="Tags"
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toTopOf="@id/chip_group_ingredients"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chip_group_ingredients"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:chipSpacingVertical="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintTop_toTopOf="@id/tag"
+        app:layout_constraintTop_toBottomOf="@id/tag"
         app:layout_constraintStart_toStartOf="parent">
 
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_green_chillies"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:text="Non-fiction"
+            android:textSize="18dp" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:text="Non-fiction" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
             android:text="Non-fiction" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_ginger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Romance" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_onion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Science Fiction" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_coriander_powder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fantasy" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_eggs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Biography" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_cloves"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Philosophy" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_red_chill_powder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Children's books" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_amchurr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Poetry" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/ingredient_karela"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fiction" />
 
 
     </com.google.android.material.chip.ChipGroup>

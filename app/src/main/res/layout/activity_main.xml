@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/blindReadId"
@@ -20,42 +23,43 @@
                 android:id="@+id/blind_book_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
                 android:text="Blind read of the day"
+                android:layout_margin="16dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
             <ImageView
                 android:id="@+id/book_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/blind_book_title" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blind_book_title"/>
 
             <TextView
                 android:id="@+id/book_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
                 android:text="Pride and prejudice"
                 android:textSize="14sp"
                 android:textStyle="bold"
+                android:layout_margin="16dp"
                 app:layout_constraintStart_toEndOf="@id/book_img"
-                app:layout_constraintTop_toTopOf="@id/book_img" />
+                app:layout_constraintTop_toTopOf="@id/book_img"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
                 android:text="by Jane Austen"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
                 app:layout_constraintStart_toEndOf="@id/book_img"
-                app:layout_constraintTop_toBottomOf="@id/book_title" />
+                app:layout_constraintTop_toBottomOf="@id/book_title"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -102,11 +106,6 @@
 
 
 
-
-
-
-
-
   </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/newrelasecard"
@@ -133,9 +132,7 @@
             app:layout_constraintTop_toBottomOf="@id/newrelase_text"
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="8dp"
-            android:orientation="horizontal">
-
-        </androidx.recyclerview.widget.RecyclerView>
+            android:orientation="horizontal"/>
 
 
 
@@ -145,27 +142,23 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
+        android:id="@+id/nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
-        app:layout_constraintBottom_tot="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottem_nav_menu"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
