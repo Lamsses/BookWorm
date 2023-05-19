@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintTop_toTopOf="@id/text_title"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/baseline_favorite_border_24"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="BOOK"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/text_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="about the book"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@id/text_title"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk abidk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk ab idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that idk about that "
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="3dp"
+            app:layout_constraintTop_toBottomOf="@id/text_title2"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
