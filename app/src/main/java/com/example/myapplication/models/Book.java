@@ -1,50 +1,52 @@
 package com.example.myapplication.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Book {
     private int id;
     private String title;
-    private String description;
+    private String content;
     private String authorName;
-    private int categoryId;
 
-    public Book(int id, String title, String description, String authorName, int categoryId) {
+    private String categoryName;
+
+    public Book(int id, String title, String content, String authorName, String categoryName) {
         this.id = id;
         this.title = title;
-        this.description = description;
+        this.content = content;
         this.authorName = authorName;
-        this.categoryId = categoryId;
+        this.categoryName = categoryName;
     }
 
     public int getId() {
         return id;
     }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
 
+    public String getTitle() {
+        return title;
+    }
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getContent() {
+        return content;
     }
 
-    public int getCategoryId() {
-        return categoryId;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
     public String getAuthorName() {
@@ -54,4 +56,6 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+
 }

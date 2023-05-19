@@ -32,7 +32,7 @@ public class ForYou_RecyclerViewAdapter extends RecyclerView.Adapter<ForYou_Recy
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.card,parent,false);
 
-        return new ForYou_RecyclerViewAdapter.MyViewHolder(view,recyclerViewInterface);
+        return new ForYou_RecyclerViewAdapter.MyViewHolder(view,recyclerViewInterface,Books);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class ForYou_RecyclerViewAdapter extends RecyclerView.Adapter<ForYou_Recy
         ImageView imageView;
         TextView bookTitle;
         TextView authorName;
-        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface,ArrayList<Book> Books) {
             super(itemView);
             imageView = itemView.findViewById(R.id.mv_book);
             bookTitle = itemView.findViewById(R.id.tv_book_title);
@@ -62,7 +62,7 @@ public class ForYou_RecyclerViewAdapter extends RecyclerView.Adapter<ForYou_Recy
                     if (recyclerViewInterface != null){
                         int position = getAdapterPosition();
                         if (position != RecyclerView.NO_POSITION){
-                            recyclerViewInterface.onItemClick(position);
+                            recyclerViewInterface.onItemClick(position,Books);
                         }
 
                     }

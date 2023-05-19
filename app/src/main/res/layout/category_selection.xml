@@ -31,62 +31,45 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
+
         <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
-            android:text="Non-fiction"
-            android:textSize="18dp"
-            />
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
-            android:text="Non-fiction"
-            android:textSize="18dp"
-            />
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
-            android:text="Non-fiction"
-            android:textSize="18dp"
-            />
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="Non-fiction"
-            android:textSize="22dp"
+            app:chipStartPadding="10dp"
+            app:chipEndPadding="10dp"
+            android:textSize="18dp"
             />
         <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:text="Non-fiction"
-            android:textSize="22dp"
+            android:text="fiction"
+            android:textSize="18dp"
+            app:chipStartPadding="10dp"
+            app:chipEndPadding="10dp"
             />
         <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.MaterialComponents.Chip.Entry"
-            android:text="Non-fiction"
-            android:textSize="22dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="test"
+            android:textSize="18dp"
+            app:chipStartPadding="10dp"
+            app:chipEndPadding="10dp"
             />
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/Widget.MaterialComponents.Chip.Entry"
-            android:text="Non-fiction"
-            android:textSize="22dp"
-            />
+
 
 
 
     </com.google.android.material.chip.ChipGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/next_button"
         android:layout_width="150dp"
         android:layout_height="55dp"
         android:text="Read now"

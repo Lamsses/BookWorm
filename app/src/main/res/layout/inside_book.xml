@@ -28,7 +28,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
 
             >
@@ -46,17 +46,23 @@
 
 
                 />
-            <TextView
-                android:id="@+id/text_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="idk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about that"
-                android:layout_marginHorizontal="16dp"
-                android:textSize="16sp"
-                android:letterSpacing="0.02"
-                android:lineSpacingExtra="3dp"
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                />
+            </WebView>
+            <!--            <TextView-->
+<!--                android:id="@+id/text_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="idk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about thatidk about that"-->
+<!--                android:layout_marginHorizontal="16dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:letterSpacing="0.02"-->
+<!--                android:lineSpacingExtra="3dp"-->
+
+<!--                />-->
 
 
         </LinearLayout>
