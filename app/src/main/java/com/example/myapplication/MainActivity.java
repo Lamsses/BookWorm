@@ -32,21 +32,35 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ArrayList<String> selectedCategory = getIntent().getStringArrayListExtra("SELECTED_CATEGORY");
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        Bundle bundle = new Bundle();
+        HomeFragment fragment = new HomeFragment();
+        bundle.putStringArrayList("SELECTED_CATEGORY",selectedCategory);
+        fragment.setArguments(bundle);
+        fragmentTransaction.replace(R.id.frame_layout,fragment);
+        fragmentTransaction.commit();
 
         binding.bottomNavView.setOnNavigationItemSelectedListener(item ->{
             switch (item.getItemId()){
                 case R.id.home:
-                    replaceFragment(new HomeFragment());
+                    FragmentManager fragmentManager1 = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
+                    Bundle bundle1 = new Bundle();
+                    HomeFragment fragment1 = new HomeFragment();
+                    bundle1.putStringArrayList("SELECTED_CATEGORY",selectedCategory);
+                    fragment1.setArguments(bundle1);
+                    fragmentTransaction1.replace(R.id.frame_layout,fragment1);
+                    fragmentTransaction1.commit();
                     break;
                 case R.id.search:
                     replaceFragment(new SearchFragment());
                     break;
-                case R.id.bookmark:
-                    replaceFragment(new BookmarkFragment());
-                    break;
+
             }
 
             return true;
@@ -56,17 +70,16 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
 //        SeeAll.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ForYouPageActivity.class)));
 //        RecyclerView forYouRecyclerView = findViewById(R.id.foryou_rv);
 //
-        Books.add(new Book(1, "Book1", "","Me",  "fiction"));
-        Books.add(new Book(2, "Book2", "", "Me","Non-fiction"));
-        Books.add(new Book(3, "Book3", "", "Me",  "fiction"));
-        Books.add(new Book(4, "Book4", "", "Me",  "Non-fiction"));
-        Books.add(new Book(5, "Book5", "", "Me",  "Romance"));
-        ArrayList<String> selectedCategory = getIntent().getStringArrayListExtra("SELECTED_CATEGORY");
-        for (Book book:Books) {
-            if (selectedCategory.contains(book.getCategoryName())){
-                forYou.add(book);
-            }
-        }
+//        Books.add(new Book(1, "Book1", "","Me",  "fiction"));
+//        Books.add(new Book(2, "Book2", "", "Me","Non-fiction"));
+//        Books.add(new Book(3, "Book3", "", "Me",  "fiction"));
+//        Books.add(new Book(4, "Book4", "", "Me",  "Non-fiction"));
+//        Books.add(new Book(5, "Book5", "", "Me",  "Romance"));
+//        for (Book book:Books) {
+//            if (selectedCategory.contains(book.getCategoryName())){
+//                forYou.add(book);
+//            }
+//        }
 //
 //        ForYou_RecyclerViewAdapter adapter = new ForYou_RecyclerViewAdapter(this, forYou, this);
 //        forYouRecyclerView.setAdapter(adapter);
@@ -91,6 +104,11 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
         intent.putExtra("BOOK_IMAGE",R.drawable.ic_launcher_background);
         startActivity(intent);
 
+
+    }
+
+    @Override
+    public void onSearchItemClick(String title, String authorName) {
 
     }
 

@@ -6,4 +6,5 @@ import java.util.ArrayList;
 
 public interface RecyclerViewInterface  {
     void onItemClick(int position, ArrayList<Book>Books);
+    void onSearchItemClick (String title,String authorName);
 }

@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/book_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_margin="16dp"
             android:src="@drawable/ic_launcher_background"
             android:scaleType="centerCrop"
@@ -41,6 +41,7 @@
             app:layout_constraintTop_toTopOf="@id/book_img"/>
 
         <TextView
+            android:id="@+id/authorName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="by Jane Austen"

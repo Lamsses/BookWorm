@@ -26,6 +26,7 @@ public class ForYou_RecyclerViewAdapter extends RecyclerView.Adapter<ForYou_Recy
         this.Books = Books;
         this.recyclerViewInterface = recyclerViewInterface;
     }
+
     @NonNull
     @Override
     public ForYou_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -39,7 +40,7 @@ public class ForYou_RecyclerViewAdapter extends RecyclerView.Adapter<ForYou_Recy
     public void onBindViewHolder(@NonNull ForYou_RecyclerViewAdapter.MyViewHolder holder, int position) {
     holder.bookTitle.setText(Books.get(position).getTitle());
     holder.authorName.setText(Books.get(position).getAuthorName());
-    holder.imageView.setImageResource(R.drawable.ic_launcher_background);
+    holder.imageView.setImageResource(Books.get(position).getImg());
     }
 
     @Override

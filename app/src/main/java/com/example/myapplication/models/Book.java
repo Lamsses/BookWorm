@@ -1,21 +1,19 @@
 package com.example.myapplication.models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Book {
     private int id;
     private String title;
     private String content;
     private String authorName;
-
+private int Img;
     private String categoryName;
 
-    public Book(int id, String title, String content, String authorName, String categoryName) {
+    public Book(int id, String title, String content, String authorName, int img, String categoryName) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.authorName = authorName;
+        Img = img;
         this.categoryName = categoryName;
     }
 
@@ -58,4 +56,7 @@ public class Book {
     }
 
 
+    public int getImg() {
+        return Img;
+    }
 }

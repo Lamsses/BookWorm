@@ -36,7 +36,7 @@ public class BookPageActivity extends AppCompatActivity {
         ImageView bookImageView = findViewById(R.id.image_book);
 
 
-        webView.loadUrl("file:///android_asset/f.html");
+        webView.loadUrl(bookContent);
         bookNameTV.setText(bookName);
 //        bookContentTV.setText(bookContent);
         bookImageView.setImageResource(bookImage);

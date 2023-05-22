@@ -9,7 +9,7 @@
     <item android:title="Search"
         android:icon="@drawable/baseline_search_24"
         android:id="@+id/search"/>
-    <item android:title="Bookmark"
-        android:icon="@drawable/baseline_bookmark_border_24"
-        android:id="@+id/bookmark"/>
+<!--    <item android:title="Bookmark"-->
+<!--        android:icon="@drawable/baseline_bookmark_border_24"-->
+<!--        android:id="@+id/bookmark"/>-->
 </menu>
